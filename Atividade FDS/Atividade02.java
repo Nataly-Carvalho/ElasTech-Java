@@ -25,16 +25,18 @@ public class Atividade02 {
             System.out.println("A divisão dos numeros da " + (numero/numero2));
     */
 
-    /*3. Crie um programa que verifica se um número digitado pelo usuário é positivo, negativo ou zero.
+    /*3. Crie um programa que verifica se um número digitado pelo usuário é positivo, negativo ou zero.*/
             System.out.println("Digite um numero");
             int numero = scan.nextInt();
 
-            if (numero>=0){
-                System.out.println("O numero é Positivo");
+            if (numero< 0){
+                System.out.println("O numero é Negativo");
+            }else if(numero == 0){
+                System.out.println("O numero é Zero");
             }else {
-                System.out.println("O numero é negativo");
+                System.out.println("O numero é Positivo");
             }
-    */
+
 
 
     /*4. Solicite ao usuário um dia da semana (em formato numérico de 1 a 7) e exiba o nome correspondente usando um bloco switch.
