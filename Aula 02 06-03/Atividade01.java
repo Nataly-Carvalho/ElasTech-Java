@@ -28,7 +28,7 @@ public class Atividade01 {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Digite um numero inteiro:");
-        numeroInt = scan.nextInt();
+        const numeroInt = scan.nextInt();
         System.out.println("O antecessor é: " + (numeroInt-1));
         System.out.println("O Sucessor é: "+ (numeroInt +1));
 
