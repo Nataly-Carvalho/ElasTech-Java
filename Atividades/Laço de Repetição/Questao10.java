@@ -18,8 +18,8 @@ public class Questao10 {
             System.out.println("Adicione um item a lista de compras");
             String item = scan.next();
             lista.add(item);
-
             System.out.println("Lista de compra atualizada com sucesso!");
+
             System.out.println("===================================");
             System.out.println(lista);
             System.out.println("===================================\n");
