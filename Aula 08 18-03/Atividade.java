@@ -33,10 +33,7 @@ quando realizar a operação o sistema deve retornar ao menu principal*/
 
             switch (op){
                 case 1:
-                    scan.nextLine();
-                    System.out.print("Digite a nova tarefa: ");
-                    String itemLista = scan.nextLine();
-                    listaTarefas.add(itemLista);
+
 
                     System.out.println("Deseja voltar ao menu? ");
                     loop = scan.next();
