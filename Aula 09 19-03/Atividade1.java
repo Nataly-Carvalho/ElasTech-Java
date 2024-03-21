@@ -27,10 +27,14 @@ public class Atividade1 {
         for(int i = 0; i<listaTarefas.size(); i++){
             System.out.println("Indice: "+ (i+1)+ " Tarefa "+listaTarefas.get(i));
         }
-        System.out.println("Digite o numero da tarefa que deseja apagar");
-        int apagar = scan.nextInt();
-        listaTarefas.remove((apagar-1));
-        System.out.println("Tarefa Removida com Sucesso!");
+        if(listaTarefas.isEmpty()){
+            System.out.println("--Não tem itens na lista--\n");
+        }else {
+            System.out.println("Digite o numero da tarefa que deseja apagar");
+            int apagar = scan.nextInt();
+            listaTarefas.remove((apagar - 1));
+            System.out.println("Tarefa Removida com Sucesso!");
+        }
     }
     static void VerLista(){
         if (listaTarefas.isEmpty()){
@@ -42,6 +46,7 @@ public class Atividade1 {
             }
         }
     }
+
     static void continuarLoop(){
         System.out.println("Deseja voltar ao menu?\nDigite -S- se deseja continuar ou -N- para sair " );
         continuar = scan.next();
@@ -55,7 +60,6 @@ public class Atividade1 {
         do{
             Menu();
             int op = scan.nextInt();
-
             switch (op){
                 case 1:
                     AdicionarItem();
