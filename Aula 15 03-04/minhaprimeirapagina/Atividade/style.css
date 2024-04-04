@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0B0F19;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+}
+
+.bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 70px;
+}
+
+.bg img {
+    width: 150px;
+}
+
+a {
+    color: white;
+    margin: 0 16px;
+    font-size: 18px;
+
+}
+
+button{
+    margin-left:auto;
+    background-color: #0B0F19;
+    color: yellow;
+    border-color: yellow;
+    border-radius: 6px;
+    padding: 10px;
+
+}
+button:hover{
+    transition: color;
+}
